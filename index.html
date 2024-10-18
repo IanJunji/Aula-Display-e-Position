@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+
+
     <div class="example">
-        <div class="example-item example-item_first">Primeiro</div>
+        <div onclick="aparecer()" class="example-item example-item_first">Primeiro
+            <div id="texto">Primeiro dentro</div>
+            <div class="bg-preto"></div>
+        </div>
         <div class="example-item example-item_second">Segundo</div>
         <div class="example-item example-item_third">Terceiro</div>
     </div>
+
+
+<script>
+    function aparecer(){
+        const texto = document.querySelector("#texto")
+
+        texto.classList.toogle('esconder')
+    }
+</script>
 </body>
 </html>

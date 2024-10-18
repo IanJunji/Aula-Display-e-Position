@@ -13,7 +13,10 @@ ul, ol, li {
 }
 
 .example {
+    margin-top: 50px;
+    height: 1000px;
     color: #FFF;
+    position: relative;
 }
     .example-item {
         width: 25%;
@@ -21,10 +24,29 @@ ul, ol, li {
     }
     .example-item_first {
         background-color: #FAA116;
+        position: relative;
     }
     .example-item_second {
         background-color: #57C7C3;
+        position: relative;
     }
     .example-item_third {
         background-color: #3B97D3;
+        position: absolute;
+
+    }
+
+    .esconder{
+        display: none;
+    }
+    .example-item_first:hover{
+        .bg-preto{
+            transition: .5s;
+            position: absolute ;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: .5;
+        }
     }
